@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Stationery Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #3a6742;
+            color: #333;
+            margin: 40px;
+        }
+        h1 {
+            color: #ffffff;
+            border-bottom: 3px solid #ffffff;
+            padding-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.885);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th {
+            background-color: #b3d7fe;
+            color: rgb(10, 0, 0);
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 15px;
+        }
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: middle;
+        }
+        .product-img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .status-yes {
+            color: #2b9348;
+            font-weight: bold;
+        }
+        .status-no {
+            color: #d90429;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Somony stationery shop</h1>
+
+    <table>
+        <tr>
+            <th>Item Photo</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>In Stock</th>
+        </tr>
+        <tr>
+            <td><img src="https://i.pinimg.com/originals/4f/bb/4a/4fbb4a130f813589007e7418bdaae68c.jpg" alt="Notebook" class="product-img"></td>
+            <td>A4 Notebook</td>
+            <td>$1.50</td>
+            <td>100</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://thumbs.dreamstime.com/z/cute-scissors-327454644.jpg?w=768" alt="Scissors" class="product-img"></td>
+            <td>Scissors</td>
+            <td>$0.75</td>
+            <td>30</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://tse2.mm.bing.net/th/id/OIP.tXtYWCHZk-0Iy6c7PTKYIQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pencils set" class="product-img"></td>
+            <td>Color Pencils Set</td>
+            <td>$7</td>
+            <td>0</td>
+            <td><span class="status-no">NO</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/81cqvZ-Vh5L._SL1500_.jpg" alt="ruler" class="product-img"></td>
+            <td>Ruler</td>
+            <td>$1</td>
+            <td>120</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://atlaspaints.co.za/wp-content/uploads/2019/09/14-pcs-set-Professional-Sketch-Drawing-Pencil-Set-HB-2B-6H-4H-2H-3B-4B-5B.jpg " alt= "pencils" class="product-img"></td>
+            <td>Pencil</td>
+            <td>$0.25</td>
+            <td>2000</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://www.sstumblers.com/wp-content/uploads/2022/04/Double-layer-stainless-steel-insulated-water-bottle-1.jpg " alt= "pencils" class="product-img"></td>
+            <td>Bottle</td>
+            <td>$5.88</td>
+            <td>15</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://th.bing.com/th/id/R.c54002a9c05a61f433a106ddb2428958?rik=gd%2bFN3wagrgwxA&riu=http%3a%2f%2ftheantiquescentreyork.co.uk%2fcdn%2fshop%2fproducts%2fe3rMWZ4DRm.jpg%3fv%3d1659560243&ehk=IhJowZ7O%2fub8it%2bsMuLpQgk7JYMY29kOshGI5b65zCM%3d&risl=&pid=ImgRaw&r=0" alt="paperweight" class="product-img"></td>
+            <td>Paperweight</td>
+            <td>$1.26</td>
+            <td>30</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn10.bigcommerce.com/s-62bdpkt7pb/products/60365/images/305135/1_The_Bible_Society_In_Cambodia_Hardcover_9789924300298_1__33457.1697797994.1280.1280.jpg?c=2&_gl=1*1hsg4zr*_ga*MTAzNzUwNjUxLjE2NzM0MjcxNzM.*_ga_WS2VZYPC6G*MTY5Nzc5MzQyMi4zODQuMS4xNjk3Nzk3OTc1LjU4LjAuMA.." alt="storybook" class="product-img"></td>
+            <td>Storybook in Khmer</td>
+            <td>$0.75</td>
+            <td>20</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+        <tr>
+            <td><img src="https://tse2.mm.bing.net/th/id/OIP.o6h2YZFLn9z5kAKrVEyinAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt= "storybook" class="product-img"></td>
+            <td>Khmer storybook for kids </td>
+            <td>$0.68</td>
+            <td>90</td>
+            <td><span class="status-yes">YES</span></td>
+        </tr>
+    </table>
+</body>
+</html>
