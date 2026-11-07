@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        .navbar {
+            background-color: rgb(101, 212, 222);
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between; /* space between the logo and the links */
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            display: none; 
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .navbar {
+                position: relative;
+            }
+
+            .menu-icon {
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: rgb(101, 212, 222);
+                padding: 20px;
+            }
+
+            #menu:checked ~ .nav-links { /*when the menu checked, it will select nav-links*/
+                display: flex; /*make the nav-links visible*/
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">Logo</div>
+
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu-icon">☰</label>  <!-- give discription for the mean icon-->
+
+        <div class="nav-links">
+            <a>Home</a>
+            <a>About</a>
+            <a>Services</a>
+            <a>Contact</a>
+        </div>
+
+    </nav>
+</body>
+</html>

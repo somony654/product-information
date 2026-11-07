@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Confidence - KIM TikTok Style</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #ff4d8d, #1a001f);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .lyrics {
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      z-index: 2;
+      line-height: 1.5;
+    }
+
+    .line {
+      opacity: 0;
+      animation: show 1.5s forwards;
+    }
+
+    /* Slower staggered animation to match song beat */
+    .line:nth-child(1) { animation-delay: 0.5s; }
+    .line:nth-child(2) { animation-delay: 3s; }
+    .line:nth-child(3) { animation-delay: 5.5s; }
+    .line:nth-child(4) { animation-delay: 8s; }
+    .line:nth-child(5) { animation-delay: 10.5s; }
+    .line:nth-child(6) { animation-delay: 13s; }
+    .line:nth-child(7) { animation-delay: 15.5s; }
+    .line:nth-child(8) { animation-delay: 18s; }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        filter: blur(8px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    .glow {
+      text-shadow:
+        0 0 10px #ff4d8d,
+        0 0 20px #ff4d8d,
+        0 0 40px #ff1fa5;
+    }
+
+    /* Hearts */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+      opacity: 0.8;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { left: -10px; top: 0; }
+
+    @keyframes float {
+      from { bottom: -50px; transform: translateX(0) rotate(45deg); }
+      to { bottom: 110%; transform: translateX(100px) rotate(45deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lyrics glow">
+    <div class="line">Je le sens c'est lui l'homme de ma vie</div>
+    <div class="line">Sa douce voix sans cesse me chavire</div>
+    <div class="line">Son parfum m'enivre, je sens le désir</div>
+    <div class="line">Je veux qu'il soit à moi pour la vie</div>
